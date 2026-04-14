@@ -1,5 +1,5 @@
 
-baseDir = 'C:\Users\USER\Desktop\IQRA\Monkeytube';
+baseDir = 'C:\Monkeytube directory\';
 
 movieFiles = {
     fullfile(baseDir, 'monkey_video.mp4')
@@ -41,7 +41,7 @@ cfg.stage1Frac = 0.50;     % first 50% of time: FORWARD ONLY (save fun/boring)
 cfg.stage2N    = 3;        % BACK ONLY duration (change this number as you want)
 
 % ---- Back button behavior for this TASK ----
-cfg.prevMode   = 'funOnly'; % when BACK is available, play ONLY fun videos
+cfg.prevMode   = 'funOnly'; % when BACK is available, play ONLY fun videos, it can be switched to "boringOnly" for playing only boring ones and to "funOrBoring50" for playing mix of both
 
 ptb_movie_eyelink_task_function(movieFiles, thumbFiles, 0, 1, 2, cfg);
 %                                               useDummy stim main
